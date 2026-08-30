@@ -1,0 +1,28 @@
+{
+  "name": "novatech-devops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickUI/novatech-devops.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ErickUI/novatech-devops/issues"
+  },
+  "homepage": "https://github.com/ErickUI/novatech-devops#readme",
+  "devDependencies": {
+    "jest": "^30.5.0"
+  }
+}

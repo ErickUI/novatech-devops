@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech - Portal de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <aside class="menu-lateral">
+            <div class="logo-area">
+                <h3>NovaTech Admin</h3>
+            </div>
+            <ul class="menu-opciones">
+                <li><a href="#">Inicio</a></li>
+                <li class="activo"><a href="#">Pedidos</a></li>
+                <li><a href="#">Módulos</a></li>
+            </ul>
+        </aside>
+
+        <main class="contenido-area">
+            <header class="barra-superior">
+                <div class="titulo-pagina">Gestión de Pedidos</div>
+                <div class="info-usuario">
+                    <span>Admin</span>
+                </div>
+            </header>
+
+            <div class="panel-trabajo">
+                <div class="cabecera-panel">
+                    <button class="btn-nuevo" onclick="agregarPedidoMock()">+ Nuevo Pedido</button>
+                    <span class="version-texto">Versión 1.0.0</span>
+                </div>
+
+                <table class="tabla-datos">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Cliente</th>
+                            <th>Producto</th>
+                            <th>Cant.</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla">
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <footer class="pie-pagina">
+                Copyright © 2026 NovaTech. Todos los derechos reservados.
+            </footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
