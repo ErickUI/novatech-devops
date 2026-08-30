@@ -1,0 +1,47 @@
+name: NovaTech CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validacion-y-pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Obtener el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar el entorno (Node.js)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: 3. Instalar dependencias
+        run: npm install
+
+      - name: 4 y 5. Ejecutar validación y pruebas automatizadas
+        run: npm test
+
+      - name: 6. Generar un artefacto (Build)
+        uses: actions/upload-artifact@v4
+        with:
+          name: portal-pedidos-artefacto
+          path: src/
+
+  construccion-imagen:
+    needs: validacion-y-pruebas
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener el código
+        uses: actions/checkout@v4
+
+      - name: 7. Construir la imagen del contenedor
+        run: docker build -t novatech-web:1.0 .
+
+      - name: 8. Ejecutar despliegue simulado (Prueba de ejecución)
+        run: |
+          docker run -d --name novatech-test -p 8080:80 novatech-web:1.0
+          sleep 5
+          curl -f http://localhost:8080 || exit 1
