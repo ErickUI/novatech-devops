@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NovaTech - Portal de Pedidos (TA1)
 
 **Objetivo**
