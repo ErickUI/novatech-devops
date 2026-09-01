@@ -2,19 +2,19 @@
 # NovaTech - Portal de Pedidos (TA1)
 
 **Objetivo**
-Prueba de concepto (PoC) DevOps para automatizar el desarrollo, validación y despliegue del portal de ventas de Comercial NovaTech S.A.C., mitigando fallos manuales y reduciendo el tiempo de entrega.
+Prueba de concepto DevOps para automatizar el desarrollo, validación y despliegue del portal de ventas de Comercial NovaTech S.A.C., mitigando fallos manuales y reduciendo el tiempo de entrega.
 
 **Tecnologías Utilizadas**
 * Frontend: HTML5, CSS3, JavaScript
 * Pruebas Automatizadas: Jest, Node.js
 * CI/CD: GitHub Actions
 * Contenedorización: Docker, Nginx
-* Automatización: Bash (Scripting)
-* IaC (Propuesta): Terraform (HCL)
+* Automatización: Bash
+* IaC: Terraform
 
 **Integrantes**
 * Samir Erick Quintana Canorio
-* [Nombre de tu compañero]
+* Sanchez Pajuelo Walter Jesus
 
 **Requisitos Previos**
 * Node.js (v18 o superior) y npm.
