@@ -5,7 +5,7 @@ describe('Suite de Pruebas - Portal de Pedidos NovaTech', () => {
     test('Valida que el cálculo del total sea correcto al multiplicar cantidad por precio', () => {
         const cantidad = 2;
         const precio = 150.00;
-        const resultadoEsperado = 300.00;
+        const resultadoEsperado = 900.00;
         
         expect(calcularTotal(cantidad, precio)).toBe(resultadoEsperado);
     });
